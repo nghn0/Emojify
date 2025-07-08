@@ -18,9 +18,37 @@ These models were trained and evaluated on the **FER2013** and a subset of **Aff
 - 35,887 grayscale images (48x48 px)
 - 7 emotions: Angry, Disgust, Fear, Happy, Neutral, Sad, Surprise
 
+> ⚠️ **Important**:  
+> Download the FER2013 dataset from [this Kaggle link](https://www.kaggle.com/datasets/msambare/fer2013)  
+> Once downloaded, extract and place it inside your working directory like so:
+>
+> ```
+> emojify/
+> ┗ data/
+>    ┣ train/
+>    ┗ test/
+> ```
+
+---
+
 ### AffectNet (subset)
 - 12,815 RGB images
 - Same 7 emotions (excluding “contempt”)
+
+> ⚠️ **Important**:  
+> Download the AffectNet dataset (subset) from [this Kaggle link](https://www.kaggle.com/datasets/mstjebashazida/affectnet)  
+> Once downloaded, extract and place it inside your working directory like so:
+>
+> ```
+> emojify/
+> ┗ affdata/
+>    ┣ train/
+>    ┗ test/
+> ```
+
+---
+
+
 
 All images were resized to 48x48, normalized, and augmented to ensure training efficiency and model generalization.
 
