@@ -37,7 +37,7 @@ These models were trained and evaluated on the **FER2013** and a subset of **Aff
 
 > ⚠️ **Important**:  
 > Download the AffectNet dataset (subset) from [this Kaggle link](https://www.kaggle.com/datasets/mstjebashazida/affectnet)  
-> Once downloaded, extract and place it inside your working directory like so:
+> Once downloaded, extract and place it inside your working directory like below and delete the contempt folder from train and test subfolder:
 >
 > ```
 > emojify/
@@ -51,6 +51,48 @@ These models were trained and evaluated on the **FER2013** and a subset of **Aff
 
 
 All images were resized to 48x48, normalized, and augmented to ensure training efficiency and model generalization.
+
+## 📁 Directory Files
+
+This section outlines the functionality of each Python script in the project and the dataset it is based on.
+
+### 🖥️ GUI Scripts (Real-Time Detection)
+
+- `gui_base_cnn.py`  
+  → Real-time facial emotion detection using the **Base CNN** model trained on **FER2013**.
+
+- `gui_attn_cnn.py`  
+  → Real-time detection using the **Attention-enhanced CNN (SE blocks)** model trained on **FER2013**.
+
+- `gui_cnn_vit.py`  
+  → Real-time detection using the **CNN + Vision Transformer hybrid** model trained on **FER2013**.
+
+---
+
+### 🧪 Training Scripts (FER2013 Dataset)
+
+- `train_base_cnn.py`  
+  → Trains a **Base CNN model** on the **FER2013** dataset.
+
+- `train_attn_cnn.py`  
+  → Trains a **CNN model with Squeeze-and-Excitation attention** on **FER2013**.
+
+- `train_cnn_vit.py`  
+  → Trains a **CNN + Vision Transformer hybrid model** on **FER2013**.
+
+---
+
+### 🧪 Training Scripts (AffectNet Dataset)
+
+- `train2_base_cnn.py`  
+  → Trains a **Base CNN model** on the **AffectNet** dataset.
+
+- `train2_cnn_attn.py`  
+  → Trains a **CNN model with attention layers** (multi-head attention) on **AffectNet**.
+
+- `train2_cnn_vit.py`  
+  → Trains a **CNN + Vision Transformer hybrid model** on **AffectNet**.
+
 
 ## 🧠 Model Architectures
 
