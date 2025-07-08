@@ -86,18 +86,16 @@ All images were resized to 48x48, normalized, and augmented to ensure training e
 - Implement **multimodal emotion recognition** combining facial expressions with voice or body language.
 - Expand dataset diversity to improve cross-population generalization.
 
-## 🙏 Acknowledgements
 
-We would like to thank our professors **Prof. P. Karthikeyan** and **Dr. Shabbeer Basha S. H.** at **RV University** for their invaluable guidance and support.
 
 ---
 
 ## 🧑‍💻 Authors
 
 - Nithish Gowda H N (1RVU23CSE317)
+- Prajna (1RVU23CSE339)
 - Pratham Rajesh Vernekar (1RVU23CSE349)
 - Nandan Kumar (1RVU23CSE299)
-- Prajna (1RVU23CSE339)
 
 ---
 
